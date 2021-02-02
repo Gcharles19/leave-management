@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Core leave Management</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/jquery.datatables.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
@@ -32,7 +34,7 @@
                                 Manage
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Leave Types</a>
+                                <a class="dropdown-item" asp-controller="LeaveType" asp-action="index">Leave Types</a>
                                 <a class="dropdown-item" href="#">Leave Allocations</a>
                                 <a class="dropdown-item" href="#">Employees</a>
                             </div>
@@ -59,6 +61,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/jquery.dataTables.min.js"></script>
     @RenderSection("Scripts", required: false)
 </body>
 </html>
