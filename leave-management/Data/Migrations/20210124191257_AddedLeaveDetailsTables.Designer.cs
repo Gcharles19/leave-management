@@ -243,7 +243,7 @@ namespace leave_management.Data.Migrations
                     b.Property<int>("LeaveTypeID")
                         .HasColumnType("int");
 
-                    b.Property<int>("NumberofDates")
+                    b.Property<int>("NumberofDays")
                         .HasColumnType("int");
 
                     b.HasKey("Id");

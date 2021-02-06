@@ -9,7 +9,7 @@ namespace leave_management.Data
     public class LeaveAllocation
     {
         public int Id { get; set; }
-        public int NumberofDates { get; set; }
+        public int NumberofDays { get; set; }
 
         public DateTime DateCreated { get; set; }
         [ForeignKey("EmployeeId")]
@@ -18,5 +18,7 @@ namespace leave_management.Data
         [ForeignKey("LeaveTypeID")]
         public LeaveType LeaveType { get; set; }
         public int LeaveTypeID { get; set; }
+
+        public int Period { get; set; }
     }
 }

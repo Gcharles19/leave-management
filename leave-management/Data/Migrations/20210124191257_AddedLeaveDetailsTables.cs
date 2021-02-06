@@ -27,7 +27,7 @@ namespace leave_management.Data.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    NumberofDates = table.Column<int>(nullable: false),
+                    NumberofDays = table.Column<int>(nullable: false),
                     DateCreated = table.Column<DateTime>(nullable: false),
                     EmployeeId = table.Column<string>(nullable: true),
                     LeaveTypeID = table.Column<int>(nullable: false)
